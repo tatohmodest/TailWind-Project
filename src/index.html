@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Todoo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <style>
+        .shadow-image{
+            filter: drop-shadow(0,0,8px grey);
+            border-radius: 8px;
+        }
+    </style>
+    <header class="flex z-20 w-full m-0 left-0 top-0  fixed justify-between shadow-md items-center">
+        <div class="w-1/4">
+            <h1 class="text-xl font-bold ml-24 text-center">Tadoo</h1>
+        </div>
+        <nav class="">
+            <ul class="list-none flex items-center justify-between mr-28">
+                <li class="m-4">Destination</li>
+                <li class="m-4">Hotel</li>
+                <li class="m-4">Booking</li>
+                <li class="m-4">Flights</li>
+                <li class="m-4">Login</li>
+                <li class="m-4 border-2 p-2">Sign up</li>
+                <li class="m-4 text-center object-bottom flex justify-center items-center">En <span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                    </span></li>
+            </ul>
+        </nav>
+    </header>
+    <section class=" mt-28 grid grid-cols-2 gap-8 mx-11 h-auto p-7 ">
+       
+        <div class="p-6 h-full w-full hover:shadow-md">
+            <h3 class="text-red-950 capitalize">BEST DESTINATION ROUND THE WORLD</h3>
+            <h1 class="text-5xl font-bold">
+                Travel, enjoy and live a new and <span class="text-red-600">full life</span> 
+            </h1>
+            <p class=" mt-7 text-sm">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed enim veritatis quia beatae inventore quod, aliquid laudantium voluptatum, itaque ab ipsam consectetur. Doloremque minus culpa libero officia perspiciatis odio nesciunt.
+            </p>
+           
+            <button class="bg-yellow-400 border-none rounded-sm p-3 m-4">Find out more</button>
+        
+        </div>
+        <div class=" max-h-96 w-full ">
+            <img class=" shadow-image object-cover w-full h-full backdrop-blur-sm" src="4.png" alt="Destination Image">
+        </div>
+    </section>
+</body>
+</html>
